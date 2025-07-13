@@ -73,7 +73,7 @@ export default function OrganisasiPage() {
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>Organisasi dan Kegiatan Mahasiswa ITBSS</h1>
+            <h1 className={styles.title}>Organisasi dan Kegiatan Mahasiswa</h1>
             <h2 className={styles.subTitle}>Data Organisasi</h2>
             <br/>
             <button
@@ -81,7 +81,7 @@ export default function OrganisasiPage() {
                 onClick={() => setFormVisible(!formVisible)}>
                 {formVisible ? 'Tutup Form' : 'Tambah Organisasi'}
             </button>
-            <button className={styles.buttonToggle} style={{ float: 'right' }} onClick={() => window.location.href = '/kegiatan'}>Kelola Kegiatan</button>
+            <button className={styles.buttonToggle} style={{ float: 'right' }} onClick={() => window.location.href = '/kegiatan'}>Data Kegiatan</button>
             
             {formVisible && (
                 <div className={styles.formWrapper}>

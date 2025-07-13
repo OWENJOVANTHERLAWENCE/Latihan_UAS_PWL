@@ -94,7 +94,7 @@ export default function KegiatanPage() {
                 onClick={() => setFormVisible(!formVisible)}>
                 {formVisible ? 'Tutup Form' : 'Tambah Kegiatan'}
             </button>
-            <button className={styles.buttonToggle} style={{ float: 'right' }} onClick={() => window.location.href = '/organisasi'}>Kelola Organisasi</button>
+            <button className={styles.buttonToggle} style={{ float: 'right' }} onClick={() => window.location.href = '/organisasi'}>Data Organisasi</button>
             
             {formVisible && (
                 <div className={styles.formWrapper}>
@@ -174,7 +174,7 @@ export default function KegiatanPage() {
                                 type="url"
                                 value={tautan_pendaftaran}
                                 onChange={(e) => setTautanPendaftaran(e.target.value)}
-                                placeholder="Contohnya: https://contoh.com/form"
+                                placeholder="Masukkan Tautan"
                             />
                         </div>
         

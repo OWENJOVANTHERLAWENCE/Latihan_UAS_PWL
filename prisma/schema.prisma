@@ -17,7 +17,7 @@ model organisasi {
   no_kontak        String
   tahun_dibentuk   Int
   pembina          String
-  kegiatans         kegiatan[]
+  kegiatans        kegiatan[]
 }
 
 model kegiatan {
